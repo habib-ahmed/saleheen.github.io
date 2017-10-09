@@ -1,0 +1,108 @@
+/* ==========================
+	default CSS 
+============================= */
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: verdana;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	font-family: verdana;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+	color: #333333;
+	display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+
+/* ==========================
+	Section CSS 
+============================= */
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.section-title h2 {
+    margin-bottom: 22px;
+    padding-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+.section-title h2::before {
+    background-color: #ffda77;
+    bottom: 0;
+    content: "";
+    height: 5px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    width: 80px;
+}
+.section-title h2::after {
+    background-color: #333;
+    bottom: 0;
+    content: "";
+    height: 5px;
+    left: 50%;
+    margin-left: -13px;
+    position: absolute;
+    width: 26px;
+}
+
+.single-service-icon {
+	color: #333;
+	display: block;
+	margin-bottom: 30px;
+	min-height: 240px;
+	text-align: center;
+}
+.single-service-icon h3 {
+    margin: 20px 0;
+}
+.service-icon-table {
+    display: table;
+    height: 80px;
+    width: 100%;
+}
+.service-icon-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-service-icon i {
+    color: #fedb77;
+    font-size: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
