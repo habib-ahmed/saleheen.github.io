@@ -1,0 +1,110 @@
+/* ==========================
+	default CSS 
+============================= */
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: verdana;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	font-family: verdana;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+	color: #333333;
+	display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+
+/* ==========================
+	Section CSS 
+============================= */
+.video-area-bg {background: #ddd url(img/video-bg.jpg) center center / cover;}
+
+.check-icon li:before {font-family: fontAwesome;	content: '\f00c';}
+
+.video-area {
+    position: relative;
+    padding: 80px 0;
+    margin: 80px 0;
+}
+.video-area-bg {
+    box-shadow: 0 0 15px #555;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40%;
+}
+.video-play-btn {
+    background-color: #2ecc71;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #2ecc71;
+    font-size: 30px;
+    height: 80px;
+    width: 80px;
+    line-height: 78px;
+    margin-top: -50px;
+    padding-left: 5px;
+    position: absolute;
+    right: -50px;
+    text-align: center;
+    top: 50%;
+}
+.video-play-btn:hover,
+.video-play-btn:focus {
+    color: #2ecc71;
+	background-color: #fff;
+}
+
+.video-right-content p {
+    color: #6c6c6c;
+    margin-bottom: 30px;
+}
+.video-right-content h3 {
+    color: #333;
+    margin-bottom: 30px;
+}
+.check-icon li {
+    padding-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+.check-icon li::before {
+    color: #2ecc71;
+    left: 0;
+    position: absolute;
+    top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
