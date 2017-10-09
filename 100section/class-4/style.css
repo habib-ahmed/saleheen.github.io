@@ -24,9 +24,9 @@ ul {
 a, a:hover, a:active, a:focus {
 	text-decoration: none;
 	outline: 0 none;
+    color: #333333;
 }
 a {
-	color: #333333;
 	display: inline-block;
 	transition: all linear .3s;
 }
