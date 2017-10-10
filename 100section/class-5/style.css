@@ -1,0 +1,101 @@
+/* ==========================
+	default CSS 
+============================= */
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: verdana;
+    color: #555;
+    line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	font-family: verdana;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+	color: #333333;
+	display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+.section-bg-1:after {background-image:url(img/bg-1.jpg);}
+
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.section-bg-1 {
+    position: relative;
+}
+.section-bg-1::after {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 47%;
+}
+.section-title {
+    color: #000;
+    text-transform: uppercase;
+}
+.section-title span {
+    color: #19b5fe;
+}
+.styled-faq {
+    margin-top: 30px;
+    min-height: 280px;
+}
+.styled-faq .panel-default .panel-heading {
+    background-color: transparent;
+    border: 0 none;
+    padding: 0;
+}
+.styled-faq .panel-default .panel-body {
+    border-top: 0 none !important;
+}
+.styled-faq .panel-default {
+    border-radius: 0;
+    box-shadow: 0 0 0;
+    margin-bottom: 15px;
+}
+.styled-faq .panel-default .panel-heading a {
+    display: block;
+    padding: 15px;
+}
+.styled-faq .panel-default .panel-heading a i {
+    display: none;
+    float: right;
+    font-size: 150%;
+    line-height: 15px;
+}
+.styled-faq .panel-default .panel-heading a[aria-expanded="true"] i.fa-angle-down {
+    display: block;
+}
+.styled-faq .panel-default .panel-heading a[aria-expanded="false"] i.fa-angle-up {
+    display: block;
+}
