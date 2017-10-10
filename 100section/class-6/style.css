@@ -1,0 +1,129 @@
+/* ==========================
+	default CSS 
+============================= */
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: verdana;
+    color: #525352;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	color: #333333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+	color: #333333;
+}
+a {
+	display: inline-block;
+	-webkit-transition: all linear .3s;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section-title h2 span {
+    color: #26a65b;
+}
+
+.single-pricing-box {
+    border: 1px solid #ddd;
+    padding: 25px;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.single-pricing-box h3 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.pricing-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.pricing-icon img {
+    max-width: 60px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.pricing-list {
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.pricing-list ul {
+    line-height: 26px;
+    padding-left: 20px;
+}
+.pricing-list li:before {
+    content: "\f00c";
+    font-family: fontawesome;
+    color: #26A65B;
+    padding-right: 10px;
+}
+.pricing-list li.offer:before {
+    content: "\f00d";
+    font-family: fontawesome;
+    color: #ED1C1C;
+}
+.single-pricing-box .pricing-count {
+    text-transform: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.bordered-btn {
+    border: 1px solid #26a65b;
+    border-radius: 50px;
+    padding: 10px 30px 12px;
+}
+.bordered-btn:hover {
+	color: #fff;
+	background-color: #26a65b;
+}
+
+.single-pricing-box:hover {
+    border-color: #26a65b;
+    box-shadow: 0 0 30px #ccc;
+}
+.single-pricing-box:hover .pricing-icon {
+    color: #26a65b;
+}
+.single-pricing-box:hover .pricing-icon img {
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.pricing-list li {
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.pricing-list li:hover {
+	padding-left: 5px;
+}
