@@ -1,0 +1,118 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	font-family: sans-serif;
+	color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333;
+}
+a {
+	transition: all linear .3s;
+}
+
+.section-padding {padding: 80px 0; background-color: #F1F1F1;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.section-borders span {
+	height: 5px;
+	background-color: #6AAF08;
+	width: 50px;
+	display: inline-block;
+	border-radius: 2px;
+}
+.section-borders span.black-border {
+	margin: 0 10px;
+	width: 30px;
+	background-color: #333;
+}
+.section-title {
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 60px;
+}
+.section-title h2 {
+    margin-bottom: 5px;
+}
+.client-testimonial-carousel .owl-dots div {
+	background-color: #6AAF08;
+	height: 5px;
+	width: 20px;
+	display: inline-block;
+	margin: 0 5px;
+	transition: .2s;
+	border-radius: 2px;
+}
+.client-testimonial-carousel .owl-dots div.active {
+	background-color: #333;
+	width: 30px;
+}
+.client-testimonial-carousel .owl-dots {
+	text-align: center;
+	margin-top: 30px;
+}
+.single-testimonial-item {
+	box-shadow: 0 0 2px #a2a59e;
+	padding: 15px;
+	padding-left: 80px;
+	margin: 2px;
+	font-style: italic;
+	position: relative;
+}
+.single-testimonial-item:before {
+	content: "\f10e";
+	font-family: fontAwesome;
+	color: #6AAF08;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: -15px;
+} 
+.single-testimonial-item::after {
+	content: '';
+	position: absolute;
+	left: 60px;
+	height: 70%;
+	width: 2px;
+	background-color: #D1D1D1;
+	top: 15%;
+}
+.single-testimonial-item h3 {
+  	font-size: 20px;
+  	font-style: normal;
+  	margin: 0;
+}
+.single-testimonial-item h3 span {
+	font-size: 13px;
+	display: block;
+	font-weight: 400;
+}
