@@ -1,0 +1,80 @@
+/* ==========================
+	default CSS 
+============================= */
+body {
+	margin: 0;
+	padding: 0;
+    font-family: tahoma;
+    color: #555;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+
+.section-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+.section-title h2 {
+    font-size: 40px;
+}
+.single-team-item img {
+    border: 2px solid #e8e8e8;
+}
+.team-social-icons {
+    background-color: #5ba939;
+    margin: -25px 25px 0;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.team-social-icons a {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    text-align: center;
+    width: 30px;
+}
+.single-team-item h4 {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.single-team-item h4 span {
+    color: #58a636;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 12px;
+}
