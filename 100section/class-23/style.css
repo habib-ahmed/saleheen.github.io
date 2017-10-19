@@ -1,0 +1,88 @@
+/* ==========================
+	default CSS 
+============================= */
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: verdana;
+    color: #555;
+    font-size: 15px;
+    line-height: 28px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+
+/* ==========================
+	Section CSS 
+============================= */
+.section-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.single-service-box {
+    border: 1px solid #ebebeb;
+    text-align: center;
+}
+.service-box-bg {
+    background-color: #ddd;
+    background-position: center top;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+.service-box-bg h3 {
+    background-color: #f97230;
+    bottom: -25px;
+    color: #fff;
+    font-family: tahoma;
+    font-size: 22px;
+    left: 7%;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    width: 86%;
+}
+.service-content {
+    padding: 55px 30px 30px;
+}
+.service-content p:last-child {
+    margin: 0;
+}
+
+.service-readmore {
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+}
+.service-readmore:hover {
+    color: #f97230;
+}
