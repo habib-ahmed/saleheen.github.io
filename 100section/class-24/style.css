@@ -118,7 +118,7 @@ img {
     width: auto !important;
 }
 .slide-content {
-    padding: 225px 0 150px 15px;
+    padding: 225px 0 150px;
 }
 .single-slide-item .row {
     position: relative;
