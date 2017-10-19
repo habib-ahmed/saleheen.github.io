@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 24</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="header-area">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-3">
+	                <div class="logo">
+	                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+	                </div>
+	            </div>
+	            <div class="col-md-9">
+	                <div class="mainmenu">
+	                    <ul>
+	                        <li class="current"><a href="index.html">Home</a></li>
+	                        <li><a href="">About</a></li>
+	                        <li><a href="">Service</a></li>
+	                        <li><a href="">Pages</a></li>
+	                        <li><a href="">Project</a></li>
+	                        <li><a href="">Features</a></li>
+	                        <li><a href="">Blog</a></li>
+	                        <li><a href="">Contact</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="homepage-slides owl-carousel">
+	    <div class="single-slide-item">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <div class="slide-content">
+	                        <h2>I won't be making any friends <br>
+	                            in the corporate suites.</h2>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione minus placeat laborum ipsa repellendus ducimus, laudantium ad?</p>
+	                        
+	                        <a href="" class="bordered-btn">Read more <i class="fa fa-angle-right"></i></a>
+	                    </div>
+	                </div>
+	                <img src="img/man.png" class="slider-img" alt="">
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="single-slide-item">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <div class="slide-content">
+	                        <h2>I won't be making any friends <br>
+	                            in the corporate suites.</h2>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione minus placeat laborum ipsa repellendus ducimus, laudantium ad?</p>
+	                        
+	                        <a href="" class="bordered-btn">Read more <i class="fa fa-angle-right"></i></a>
+	                    </div>
+	                </div>
+	                <img src="img/man.png" class="slider-img" alt="">
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="single-slide-item">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <div class="slide-content">
+	                        <h2>I won't be making any friends <br>
+	                            in the corporate suites.</h2>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione minus placeat laborum ipsa repellendus ducimus, laudantium ad?</p>
+	                        
+	                        <a href="" class="bordered-btn">Read more <i class="fa fa-angle-right"></i></a>
+	                    </div>
+	                </div>
+	                <img src="img/man.png" class="slider-img" alt="">
+	            </div>
+	        </div>
+	    </div>
+
+	</div>
+
+
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+
+		// owl-carousel active
+		$(".homepage-slides").owlCarousel({
+			items: 1,
+			loop: true,
+			nav: true,
+			navText: ["<i class='fa fa-long-arrow-left'</i>","<i class='fa fa-long-arrow-right'</i>"],
+			dot: true,
+			autoplay: true,
+		    autoplayTimeout: 8000,
+		    autoplaySpeed: 3500,
+		    fluidspeed: true,
+		    navSpeed: 3500,
+		    dragEndSpeed:3500,
+			autoplayHoverPause: false
+		});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>
