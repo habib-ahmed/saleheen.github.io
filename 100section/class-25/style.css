@@ -1,0 +1,145 @@
+/* ==========================
+	default CSS 
+============================= */
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: tahoma;
+    color: #555;
+    line-height: 1.9;
+    font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.section-title {
+    margin-bottom: 80px;
+    text-align: center;
+}
+.section-title h2 {
+    color: #222;
+    text-transform: capitalize;
+}
+.title-borders {
+    background-color: #222222;
+    border-radius: 4px;
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    width: 25px;
+}
+.title-borders::before {
+    background-color: #6aaf08;
+    content: "";
+    height: 100%;
+    left: -50px;
+    position: absolute;
+    width: 40px;
+}
+.title-borders::after {
+    background-color: #6aaf08;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -50px;
+    width: 40px;
+}
+
+.single-feature-item {
+    margin-bottom: 15px;
+}
+.feature-bordered-img {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid #fff;
+    height: 120px;
+    position: relative;
+}
+.feature-bordered-img::after {
+    background-color: #6aaf08;
+    bottom: -6px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -6px;
+    width: 100%;
+    z-index: -1;
+}
+.single-feature-item h3 {
+    border-bottom: 1px dashed #6aaf08;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    padding-bottom: 20px;
+}
+.big-feature-bordered-img {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    margin-left: 30px;
+    position: relative;
+}
+.big-feature-bordered-img::before {
+    background-color: #6aaf08;
+    background-image: url(img/debut-light.png);
+    background-repeat: repeat;
+    content: "";
+    height: 100%;
+    left: -10px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+.big-feature-bordered-img::after {
+    background-color: #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
