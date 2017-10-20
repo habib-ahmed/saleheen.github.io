@@ -1,0 +1,126 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+input:focus,
+textarea:focus {
+	outline: 0;
+}
+input[type="submit"],
+button[type="submit"] {
+    border: 0 none;
+}
+input[type="email"], input[type="password"], input[type="tel"], input[type="text"], input[type="url"], textarea {
+    background-color: #f9f9f9;
+    border: medium none;
+    padding: 15px;
+}
+
+.fix {overflow: hidden;}
+.clear {clear: both;}
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.white-box {
+    box-shadow: 0 0 10px #ebebeb;
+    padding: 30px;
+}
+.colored-box h4, .white-box h4 {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.contact-form input, .contact-form textarea {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.contact-form textarea {
+    height: 115px;
+    resize: none;
+}
+.contact-form input[type="submit"], button[type="submit"] {
+    background-color: #52b0fb;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px 30px;
+}
+
+.colored-box {
+    background-color: #52b0fb;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 15px;
+    min-height: 470px;
+    padding: 30px;
+}
+.colored-box h4,
+.colored-box a {
+    color: #fff;
+}
+.contact-info {
+    margin-bottom: 30px;
+    padding-left: 50px;
+    position: relative;
+}
+.contact-info i.fa {
+    font-size: 25px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+}
+.social-icons a {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #999;
+    color: #333;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all .3s ease 0s;
+    width: 40px;
+}
+.social-icons a:hover {
+    color: #52B0FB;
+    box-shadow: none;
+}
