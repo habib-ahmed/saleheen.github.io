@@ -148,19 +148,15 @@ img {
 
 .homepage-slides .owl-nav div {
 	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid;
 	border-radius: 50%;
 	color: #e6ad21;
 	display: inline-block;
-	font-size: 20px;
-	line-height: 48px;
-	height: 50px;
-	width: 50px;
-	text-align: center;
+	font-size: 70px;
+	padding: 15px;
 	position: absolute;
 	left: 0;
 	top: 50%;
-	margin-top: -25px;
+	margin-top: -35px;
 	transition: .3s;
 	opacity: 0;
 	visibility: hidden;
