@@ -63,13 +63,24 @@ a.boxed-btn {
     margin-top: 30px;
 }
 .shadow-gallery {
-    padding-top: 45px;
+    padding-top: 40px;
     position: relative;
+}
+.shadow-gallery img {
+    box-shadow: 0 0 50px #bbb;
+    position: relative;
+    width: 55%;
 }
 .shadow-gallery img:nth-child(2), .shadow-gallery img:nth-child(3) {
     bottom: 0;
     position: absolute;
     right: 0;
+}
+.shadow-gallery img:nth-child(1) {
+    top: -50px;
+}
+.shadow-gallery img:nth-child(2) {
+    z-index: 2;
 }
 .shadow-gallery img:nth-child(3) {
     bottom: -60px;
@@ -82,10 +93,4 @@ a.boxed-btn {
     box-shadow: 0 0 50px #bbb;
     position: relative;
     width: 55%;
-}
-.shadow-gallery img:nth-child(1) {
-    top: -50px;
-}
-.shadow-gallery img:nth-child(2) {
-    z-index: 2;
 }
