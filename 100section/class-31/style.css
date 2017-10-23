@@ -1,0 +1,114 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+.section-padding {padding: 80px 0;}
+
+.overlay {
+   /*background-attachment: fixed; */  /* "This is Basic Parallax" */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #666;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+	opacity: .4;
+    z-index: -1;
+}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.section-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.section-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.full-height {
+    height: 100%;
+    padding: 0;
+}
+.single-service-item {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    text-align: center;
+}
+.single-service-item::after {
+}
+.single-service-item a, .single-service-item h2 {
+    color: #fff;
+}
+.single-service-item h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.service-icon {
+    font-size: 80px;
+    line-height: 1;
+}
+.video-play-box {
+    text-align: center;
+}
+.video-play-box h2 {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+.video-btn {
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 20px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+}
+
+.video-play-box {
+    transition: .3s;
+}
