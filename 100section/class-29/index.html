@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 29 | Filter Masonry</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="project-titles">
+						<li class="active" data-filter="*">all</li>
+						<li data-filter=".web">web</li>
+						<li data-filter=".graphic">graphic</li>
+						<li data-filter=".photo">photo</li>
+						<li data-filter=".design">design</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row project-list">
+				<div class="col-md-4 web graphic design">
+					<div class="single-project-item" style="background-image: url(img/1.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 graphic photo">
+					<div class="single-project-item" style="background-image: url(img/2.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 web design">
+					<div class="single-project-item" style="background-image: url(img/3.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 web photo">
+					<div class="single-project-item" style="background-image: url(img/4.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 graphic design">
+					<div class="single-project-item" style="background-image: url(img/5.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 photo">
+					<div class="single-project-item" style="background-image: url(img/6.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 graphic design">
+					<div class="single-project-item" style="background-image: url(img/7.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 web design">
+					<div class="single-project-item" style="background-image: url(img/8.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 web design">
+					<div class="single-project-item" style="background-image: url(img/9.jpg);">
+						<div class="project-hover">
+							<a href="#"><i class="fa fa-expand"></i></a>
+							<h4>Projetc title <span>Art work</span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/isotope-3.0.4.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {  
+
+		// isotop click function
+		$('.project-titles li').on('click', function() {
+			var selector = $(this).attr('data-filter');
+			$('.project-list').isotope({
+				filter: selector
+			});
+			
+			$('.project-titles li').removeClass('active');
+			$(this).addClass('active');
+		});
+		// isotop active
+	    $('.project-list').isotope();
+});
+}(jQuery));	
+</script>
+</body>
+</html>

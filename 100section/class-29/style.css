@@ -1,0 +1,121 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+.section-padding {padding: 50px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.project-titles {
+    margin: 0 0 50px;
+}
+.project-titles li {
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 15px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+.project-titles li.active {
+    color: #00ddd6;
+}
+.single-project-item a, .single-project-item span {
+    color: #00d7d0;
+}
+.single-project-item {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 15px;
+}
+.row.project-list .col-md-4:nth-child(2) .single-project-item,
+.row.project-list .col-md-4:nth-child(4) .single-project-item,
+.row.project-list .col-md-4:nth-child(6) .single-project-item {
+	height: 615px;
+}
+.row.project-list .col-md-4 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+.row.project-list {
+    margin-left: -7.5px;
+    margin-right: 7.5px;
+}
+.project-hover {
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}
+.project-hover:after {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.project-hover a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 30px;
+    font-size: 20px;
+}
+.project-hover h4 {
+    bottom: 30px;
+    color: #fff;
+    font-weight: 400;
+    left: 30px;
+    margin: 0;
+    position: absolute;
+}
+.project-hover h4 span {
+    display: block;
+    font-size: 80%;
+    margin-top: 10px;
+}
+.single-project-item:hover .project-hover {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
