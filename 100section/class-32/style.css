@@ -1,0 +1,95 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Changa+One|Roboto:400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Changa One', cursive;
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: #333;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.single-promo-box {
+    background-color: #666;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    height: 280px;
+    margin: 5px;
+    position: relative;
+}
+.promo-content {
+    bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    left: 0;
+    padding: 20px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.promo-content h2 {
+    color: #fff;
+    font-family: "Changa One",cursive;
+    font-size: 40px;
+    font-weight: 900;
+}
+.single-promo-box:hover {
+    box-shadow: 0 0 10px #999;
+    transform: scale(1.03);
+}
+.xtra-class {
+  padding: 80px 0 0;
+  text-align: justify;
+}
+
+
+.scrolltotop {
+	background-color: #ffac22;
+	border-radius: 50%;
+	bottom: 30px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 30px;
+	height: 50px;
+	line-height: 48px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	transition: all 0.4s ease 0s;
+	width: 50px;
+	display: none;
+}
+.scrolltotop:hover {
+	background-color: #333;
+	color: #fff;
+}
