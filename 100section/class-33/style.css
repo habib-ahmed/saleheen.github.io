@@ -1,0 +1,121 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.full-width-bg-area {
+    background-color: #666;
+    background-position: center center;
+    background-size: cover;
+    margin: 70px 0;
+}
+.margin-minus {
+    font-size: 18px;
+    line-height: 1.9;
+    margin: -70px 0;
+    padding: 70px;
+}
+.dark-bg {
+    background-color: #2b2f41;
+    color: #fff;
+}
+a.bordered-btn {
+    border: 2px solid #cda973;
+    color: #fff;
+    padding: 10px 40px;
+}
+.margin-minus .bordered-btn {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.boxed-content h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+h4.author-name {
+    font-size: 23px;
+    margin-left: 15px;
+    margin-top: 30px;
+    padding-left: 40px;
+    position: relative;
+}
+h4.author-name span {
+    font-size: 70%;
+    font-weight: 400;
+    opacity: 0.5;
+}
+h4.author-name::before {
+    background-color: #fff;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+.boxed-content {
+    padding: 20px 15px 20px 40px;
+    position: relative;
+}
+.boxed-content::before {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    content: "";
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 60px;
+}
+.boxed-content::after {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    bottom: 0;
+    content: "";
+    height: 60px;
+    position: absolute;
+    right: 0;
+    width: 60px;
+}
