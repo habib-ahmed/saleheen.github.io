@@ -1,0 +1,112 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.homepage-slides {margin-bottom: 100px;}
+.single-slide-item {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.slide-text-area {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.slide-text {
+    background-color: #1784c7;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 70px 130px;
+    position: relative;
+}
+.slide-text h2 {
+    font-size: 50px;
+}
+a.boxed-btn {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+.slide-text::before {
+    background-color: #1784c7;
+    content: "";
+    height: 100%;
+    left: -1000%;
+    position: absolute;
+    top: 0;
+    width: 1000%;
+}
+.slide-text::after {
+    background-color: #1784c7;
+    content: "";
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    top: 50px;
+    transform: rotate(45deg);
+    width: 20px;
+}
+
+.homepage-slides2 .slide-text,
+.homepage-slides2 .slide-text:before,
+.homepage-slides2 .slide-text:after {
+    background-color: rgba(23,132,199,.5);
+}
+.homepage-slides2 .slide-text:after {
+	height: 0;
+	width: 0;
+	right: -20px;
+	transform: rotate(0deg);
+	background-color: transparent;
+	border-left: 20px solid rgba(23,132,199,.5);
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+}
