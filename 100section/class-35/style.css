@@ -72,7 +72,6 @@ a {
   border-top: 13px solid transparent;
   height: 0;
   left: 0;
-  opacity: 0.5;
   position: absolute;
   top: 170px;
   width: 0;
@@ -116,7 +115,6 @@ a.read-more {
   border-top: 13px solid transparent;
   content: "";
   height: 0;
-  opacity: 0.5;
   position: absolute;
   right: 0;
   top: 170px;
