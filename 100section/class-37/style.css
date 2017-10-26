@@ -1,0 +1,104 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+h2.section-title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    left: -80px;
+    padding-top: 30px;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+    top: 113px;
+    transform: rotate(-90deg);
+    width: 300px;
+}
+h2.section-title::before {
+    background-color: #000;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+}
+.team-bg {
+    background-color: #ddd;
+    background-position: center top;
+    background-size: cover;
+    height: 230px;
+    margin-bottom: 50px;
+}
+.border-content {
+    border: 1px solid #333;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.border-content h3 {
+    background-color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 10px 15px;
+    text-transform: uppercase;
+}
+.border-content span {
+    display: block;
+    font-size: 15px;
+    margin-top: -15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.team-title {
+    margin-top: -13px;
+}
+.col-md-4:nth-child(2) .single-team-member {
+    margin-top: 106px;
+} 
