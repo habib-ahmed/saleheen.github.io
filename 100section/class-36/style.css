@@ -1,0 +1,164 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Playball|Roboto:300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+
+/* ==========================
+	Section CSS 
+============================= */
+body {
+    background-color: #f5f6fa;
+}
+.promo-boxes-wrap {
+    margin-left: -15px;
+    overflow: hidden;
+}
+.single-promo-box {
+    display: table;
+    float: left;
+    height: 350px;
+    overflow: hidden;
+    width: 50%;
+    background-color: #fff;
+}
+.promobox-tablecell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.single-promo-box:nth-child(2) {
+    background-color: #da879b;
+}
+.single-promo-box:nth-child(3) {
+    background-color: #7bbacf;
+}
+
+.promo-icon::before {
+    font-size: 70px;
+    line-height: 1;
+}
+.single-promo-box h3 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    padding: 25px 0;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1;
+}
+.boxed-btn {
+    background-color: #7dbace;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 12px 40px;
+    text-transform: uppercase;
+}
+.boxed-btn:hover {
+    background-color: #333;
+    color: #fff;
+} 
+.single-promo-box h3::after {
+    background-color: #da879b;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+.single-promo-box .boxed-btn {
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+}
+.promobox-tablecell {
+    padding-top: 48px;
+    transition: all 0.3s ease 0s;
+}
+.single-promo-box:hover .promobox-tablecell {
+    padding-top: 0;
+}
+.single-promo-box:hover .boxed-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.single-promo-box:nth-child(2), .single-promo-box:nth-child(3) {
+    color: #fff;
+}
+.single-promo-box:nth-child(2) h3::after, .single-promo-box:nth-child(3) h3::after {
+    background-color: #fff;
+}
+.single-promo-box:nth-child(2) .boxed-btn, .single-promo-box:nth-child(3) .boxed-btn {
+    background-color: #fff;
+    color: #333;
+}
+.single-promo-box:nth-child(4) h3::after, .single-promo-box:nth-child(4) .promo-icon {
+    background-color: #7DBACE;
+    color: #7DBACE;
+}
+
+
+.right-side-content {
+    padding: 140px 50px 0;
+}
+.head-content h3 {
+    color: #7bbacf;
+    font-family: "Playball",cursive;
+    text-transform: capitalize;
+}
+.right-side-content h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.right-side-content .section-btn {
+    margin-top: 40px;
+}
+.border-btn {
+    border: 1px solid;
+    border-radius: 50px;
+    color: #7bbacf;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 38px;
+    text-transform: uppercase;
+}
+.right-side-content .border-btn {
+    margin-left: 15px;
+}
+.right-side-content h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.right-side-content h2 {
+}
