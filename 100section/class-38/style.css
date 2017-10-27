@@ -1,0 +1,187 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 80px 0;}
+
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.logo img {
+    left: 0;
+    max-width: 100px;
+    position: absolute;
+    top: 0;
+}
+.logo a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.logo span {
+    display: block;
+    font-size: 80%;
+    font-style: italic;
+    font-weight: 400;
+}
+.logo {
+    padding-bottom: 25px;
+    padding-left: 120px;
+    padding-top: 25px;
+    position: relative;
+}
+.right-contact-box {
+    display: inline-block;
+    font-size: 18px;
+    margin: 18px 0;
+    padding-left: 30px;
+    position: relative;
+    text-align: left;
+}
+.right-contact-box i.fa {
+    font-size: 30px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+}
+.header-area {
+    left: 0;
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.single-slide-item {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    padding: 180px 0 100px;
+}
+.slide-text {
+    font-size: 18px;
+    padding: 50px 75px;
+    position: relative;
+    z-index: 1;
+}
+.slide-text::after {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.slide-text h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.boxed-btn {
+    background-color: #f18000;
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+.boxed-btn:hover {
+    background-color: #333;
+    color: #F18000;
+}
+.slide-text .boxed-btn {
+    margin-top: 15px;
+}
+
+
+.homepage-slides .owl-nav div {
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 50%;
+	color: #333;
+	display: inline-block;
+	font-size: 70px;
+    line-height: 1;
+	padding: 15px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -35px;
+	transition: .3s;
+	opacity: 0;
+	visibility: hidden;
+}
+.homepage-slides .owl-nav div.owl-next {
+	left: auto;
+	right: 0;
+}
+.homepage-slides:hover .owl-nav div.owl-prev {
+	opacity: 1;
+	visibility: visible;
+	left: 2%;
+}
+.homepage-slides:hover .owl-nav div.owl-next {
+	opacity: 1;
+	visibility: visible;
+	left: auto;
+	right: 2%;
+}
+
+.homepage-slides .owl-dots {
+	text-align: center;
+	position: relative;
+	top: -50px;
+}
+.homepage-slides .owl-dots .owl-dot {
+	display: inline-block;
+	margin: 0 5px;
+}
+.homepage-slides .owl-dots .owl-dot span {
+    background-color: #fff;
+	border-radius: 50%;
+	display: block;
+	height: 15px;
+	width: 15px;
+}
+.homepage-slides .owl-dots .owl-dot.active span {
+	background-color: #F18000;
+}

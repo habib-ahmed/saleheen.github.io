@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 38</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="header-area">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-3">
+                   <div class="logo">
+                       <a href="index.html"><img src="img/logo.png" alt="">Recipe <span>Cook anything</span></a>
+                   </div>
+               </div>
+               <div class="col-md-9 text-right">
+                   <p class="right-contact-box">
+                       <i class="fa fa-map-marker"></i>  
+                       Address Line One, <br>  
+                       Address Line Two, Dhaka-1200 <br>  
+                   </p>
+                   <p class="right-contact-box">
+                       <i class="fa fa-phone"></i>  
+                        <a href="tel:34523423">+88010 02131332</a>,  <br>
+                        <a href="tel:34523423">+88010 02131332</a> 
+                   </p>
+               </div>
+           </div>
+       </div>
+   </div>
+	
+	<div class="homepage-slides owl-carousel">
+	    <div class="single-slide-item" style="background-image: url(img/1.jpg);">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-8">
+                       <div class="slide-text">
+                           <h2>Lorem ipsum dolor sit amet.</h2>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit! Officia, totam temporibus, facere natus quas reiciendis earum cupiditate error expedita, aspernatur placeat, nobis dolores.</p>
+                           <a href="" class="boxed-btn">view recipe</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+	    <div class="single-slide-item" style="background-image: url(img/2.jpg);">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-8">
+                       <div class="slide-text">
+                           <h2>Lorem ipsum dolor sit amet.</h2>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit! Officia, totam temporibus, facere natus quas reiciendis earum cupiditate error expedita, aspernatur placeat, nobis dolores.</p>
+                           <a href="" class="boxed-btn">view recipe</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+	    <div class="single-slide-item" style="background-image: url(img/3.jpg);">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-8">
+                       <div class="slide-text">
+                           <h2>Lorem ipsum dolor sit amet.</h2>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit! Officia, totam temporibus, facere natus quas reiciendis earum cupiditate error expedita, aspernatur placeat, nobis dolores.</p>
+                           <a href="" class="boxed-btn">view recipe</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+	</div>
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+<script>
+(function ($) {
+    "use strict";
+    $(document).ready(function() {   
+
+		// owl-carousel active
+		$(".homepage-slides").owlCarousel({
+			items: 1,
+			loop: true,
+			nav: true,
+			navText: ["<i class='fa fa-angle-left'</i>","<i class='fa fa-angle-right'</i>"],
+			dot: true,
+			autoplay: true,
+		    autoplayTimeout: 4000,
+			autoplayHoverPause: false,
+            animateOut: 'fadeOut'
+		});
+
+    });
+}(jQuery));	
+</script>
+</body>
+</html>
