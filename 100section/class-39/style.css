@@ -1,0 +1,146 @@
+/* ==========================
+	default CSS 
+============================= */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.gradient-overlay-wrapper:after {
+	background: #2523af;
+	background: -moz-linear-gradient(-45deg, #2523af 46%, #ddb2c6 100%);
+	background: -webkit-linear-gradient(-45deg, #2523af 46%,#ddb2c6 100%);
+	background: linear-gradient(135deg, #2523af 46%,#ddb2c6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2523af', endColorstr='#ddb2c6',GradientType=1 );
+}
+.gradient-overlay-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.gradient-overlay-wrapper:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo img {
+    max-height: 100px;
+    max-width: 170px;
+}
+.mainmenu ul {
+    text-align: right;
+}
+.mainmenu li {
+    display: inline-block;
+}
+.mainmenu li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    opacity: 0.6;
+    padding: 12px 20px;
+}
+.mainmenu li:hover a {
+    color: #fff;
+    opacity: 1;
+}
+.header-area {
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+.header-area::after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+}
+.hero-wrap {
+    position: relative;
+    z-index: 1;
+}
+.mobile-screen {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    max-height: 500px;
+}
+.hero-text {
+    color: #fff;
+    font-size: 17px;
+    max-width: 450px;
+    opacity: 0.8;
+    padding: 120px 0 100px;
+}
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+.hero-text p {
+    opacity: 0.6;
+}
+.hero-btns {
+    margin-top: 50px;
+}
+.boxed-btn {
+    border: 1px solid;
+}
+.underlined-btn {
+    text-decoration: underline;
+}
+.hero-btns a {
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+}
