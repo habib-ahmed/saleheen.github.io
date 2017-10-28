@@ -1,0 +1,103 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Montserrat:100,200,300,400,500,700,800,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Serif', serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 20px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+body {
+  background: #EBEAF0;
+  color: #F1FDFE;
+  line-height: 1.7;
+  font-size: 16px;
+}
+.colored-bg {
+  background: #73DAE1;
+  position: relative;
+    margin: 50px 0;
+}
+.left-content {
+  padding-left: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 480px;
+    min-height: 580px;
+}
+.right-img {
+  position: absolute;
+  right: -25px;
+  bottom: 0;
+    max-height: 580px;
+}
+.top-tagline {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+    padding-bottom: 10px;
+}
+.top-tagline:after {
+  position: absolute;
+  left: 2px;
+  bottom: 0;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  content: "";
+}
+.left-content h1 {
+  font-weight: 300;
+  font-size: 45px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.bordered-btn {
+  background-color: #f3f450;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #eeee76;
+  color: #555;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 35px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+}
