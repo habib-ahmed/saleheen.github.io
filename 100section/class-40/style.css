@@ -1,0 +1,165 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: #333;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {
+    background-size: cover;
+    background-position: center bottom;
+    padding: 80px 0;
+    background-attachment: fixed;
+}
+
+.price-boxes {
+  overflow: hidden;
+  box-shadow: 0 0 20px #777;
+}
+.single-price-box {
+  width: 33.3333%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.price-box-img {
+  display: table;
+  width: 100%;
+  height: 190px;
+  text-align: center;
+}
+.price-box-img img {
+  max-width: 120px;
+  max-height: 110px;
+}
+.price-box-img-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.single-price-box::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #D6EDFF;
+  content: "";
+  opacity: .7;
+}
+.single-price-box:last-child:after {
+  display: none;
+}
+
+.pricing-box-content {
+  background: #fff;
+  color: #64B5FF;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 30px 20px;
+}
+.pricing-box-content h2 {
+  font-weight: 900;
+  position: relative;
+  padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.pricing-box-content h2:after {
+  position: absolute;
+  width: 31px;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -15px;
+  content: "";
+  background: #64B5FF;
+}
+.pricing-box-content h3 {
+  color: #FB5D6B;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+.pricing-box-content h3:before {
+  position: absolute;
+  content: "$";
+  font-size: 22px;
+  left: -14px;
+  top: 0;
+}
+.pricing-box-content h3::after {
+  content: "/mo";
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-left: 2px;
+}
+.pricing-box-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  padding-left: 50px;
+    margin-top: 20px;
+}
+.pricing-box-content li {
+    margin-bottom: 10px;
+}
+.boxed-btn {
+  display: inline-block;
+  color: #fff;
+  background: #64B5FF;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 22px;
+  border-radius: 5px;
+  margin-top: 30px;
+border: 1px solid #64B5FF;
+    transition: all ease .3s;
+    margin-left: 10px;
+}
+.boxed-btn.active {
+    background: #F75363;
+    color: #fff;
+border: 1px solid #F75363;
+}
+.boxed-btn:hover {
+    background: #fff;
+    color: #64B5FF;
+}
