@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 47</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<section class="section-padding testimonial-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="testimonial-carousel owl-carousel">
+						<div class="single-testimonial-item">
+							<div class="user-avater">
+								<img src="img/1.jpg" alt="">
+							</div>
+
+							<div class="testimonial-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga officia natus optio,  blanditiis quia dolores doloribus beatae in totam perspiciatis. Nesciunt rerum omnis ex dolores earum aut culpa aliquid fuga, enim, magnam laborum distinctio, qui mollitia molestias saepe architecto tenetur.</p>
+							</div>
+
+							<h4>Jhon Doe <span>Web developer</span></h4>
+						</div>
+						<div class="single-testimonial-item">
+							<div class="user-avater">
+								<img src="img/1.jpg" alt="">
+							</div>
+
+							<div class="testimonial-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga officia natus optio,  blanditiis quia dolores doloribus beatae in totam perspiciatis. Nesciunt rerum omnis ex dolores earum aut culpa aliquid fuga, enim, magnam laborum distinctio, qui mollitia molestias saepe architecto tenetur.</p>
+							</div>
+
+							<h4>Jhon Doe <span>Web developer</span></h4>
+						</div>
+						<div class="single-testimonial-item">
+							<div class="user-avater">
+								<img src="img/1.jpg" alt="">
+							</div>
+
+							<div class="testimonial-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga officia natus optio,  blanditiis quia dolores doloribus beatae in totam perspiciatis. Nesciunt rerum omnis ex dolores earum aut culpa aliquid fuga, enim, magnam laborum distinctio, qui mollitia molestias saepe architecto tenetur.</p>
+							</div>
+
+							<h4>Jhon Doe <span>Web developer</span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+
+		// owl-carousel active
+		$(".testimonial-carousel").owlCarousel({
+			items: 1,
+			loop: true,
+			nav: false,
+			dot: true,
+			autoplay: true,
+		    autoplayTimeout: 8000,
+		    autoplaySpeed: 3500,
+		    fluidspeed: true,
+		    navSpeed: 3500,
+		    dragEndSpeed:3500,
+			autoplayHoverPause: false
+		});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>
