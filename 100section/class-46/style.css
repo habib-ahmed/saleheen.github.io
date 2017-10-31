@@ -1,0 +1,166 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,700');
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald",sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.section-padding {
+    padding: 80px 0px
+}
+.dark-bg {
+    background: #353535;
+    color: #a5a5a5;
+}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.trailor-text {
+    font-weight: 400;
+    line-height: 1.7;
+    padding-top: 50px;
+}
+.trailor-text h2 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+.trailor-text h2::after {
+    background-color: #ff5151;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+}
+.bordered-btn {
+    border: 2px solid #ff5151;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 8px 15px;
+    width: 200px;
+}
+.trailor-text p {
+    font-family: tahoma;
+}
+.bordered-btn i.fa {
+    float: right;
+    font-size: 12px;
+    padding-top: 11px;
+    transition: all 0.3s ease 0s;
+}
+.bordered-btn:hover {
+    color: #fff;
+}
+.bordered-btn:hover i.fa {
+    transform: translateX(5px);
+}
+.trailor-info {
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+}
+.colored-pricing-box {
+    background-color: #ff5151;
+    color: #fff;
+    height: 280px;
+    padding-top: 43px;
+    position: absolute;
+    right: 150px;
+    text-align: center;
+    top: 0;
+    width: 220px;
+    z-index: 1;
+}
+.trailor-info img {
+    height: 500px;
+    padding-top: 150px;
+    position: relative;
+    width: auto !important;
+    display: inline-block !important;
+    z-index: 2;
+}
+.colored-pricing-box p {
+    margin-bottom: 5px;
+    opacity: 0.5;
+}
+.colored-pricing-box p.price-text {
+    font-size: 35px;
+    line-height: 1;
+    margin: 0;
+    opacity: 1;
+}
+.absolute-shopping-cart {
+    background-color: #fff;
+    box-shadow: 0 0 10px #666;
+    color: #333;
+    font-size: 16px;
+    height: 50px;
+    left: -20px;
+    line-height: 47px;
+    position: absolute;
+    top: 25px;
+    width: 50px;
+}
+
+
+
+
+.featured-trailor-carousel .owl-dots div:nth-child(1) span:before {content: '01';}
+.featured-trailor-carousel .owl-dots div:nth-child(2) span:before {content: '02';}
+.featured-trailor-carousel .owl-dots div:nth-child(3) span:before {content: '03';}
+.featured-trailor-carousel .owl-dots div:nth-child(4) span:before {content: '04';}
+.featured-trailor-carousel .owl-dots div:nth-child(5) span:before {content: '05';}
+.featured-trailor-carousel .owl-dots div:nth-child(6) span:before {content: '06';}
+.featured-trailor-carousel .owl-dots div:nth-child(7) span:before {content: '07';}
+.featured-trailor-carousel .owl-dots div:nth-child(8) span:before {content: '08';}
+.featured-trailor-carousel .owl-dots div:nth-child(9) span:before {content: '09';}
+.featured-trailor-carousel .owl-dots div:nth-child(10) span:before {content: '10';}
+
+.featured-trailor-carousel .owl-dots {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.featured-trailor-carousel .owl-dots div {
+    border-left: 2px solid #666;
+    padding: 10px 20px;
+}
+.featured-trailor-carousel .owl-dots div.active {
+    border-left: 2px solid #FF5151;
+}
