@@ -1,0 +1,116 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900');
+body {
+    color: #737678;
+    font-family: "Raleway",sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+
+.section-padding {padding: 50px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+
+.prcing-tables {
+    overflow: hidden;
+    padding: 30px 20px 20px;
+}
+.single-pricing-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px #f3f3f3;
+    float: left;
+    position: relative;
+    width: 33.33%;
+    z-index: 1;
+}
+.pricing-heading {
+    background-color: #f9f9f9;
+    color: #898888;
+    font-size: 17px;
+    padding: 40px;
+}
+.pricing-heading h4 {
+    color: #888;
+    font-size: 30px;
+    font-weight: 400;
+}
+.pricing-heading h1 {
+    color: #333;
+    font-size: 50px;
+    font-weight: 400;
+}
+.pricing-content {
+    padding: 60px;
+}
+.pricing-content ul {
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.pricing-btn {
+    border: 1px solid;
+    border-radius: 50px;
+    color: #f91942;
+    font-weight: 600;
+    padding: 15px 30px;
+}
+.pricing-btn:hover {
+	transform: scaleX(1.2);
+	color: #F91942;
+} 
+.active .pricing-heading {
+    background-color: #f91942;
+    color: #fff;
+    margin-top: -28px;
+    overflow: hidden;
+    position: relative;
+}
+.active .pricing-heading h1, .active .pricing-heading h4 {
+    color: #fff;
+}
+.single-pricing-box.active {
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+    position: relative;
+    z-index: 2;
+}
+
+.active .pricing-content {
+    padding: 75px 60px;
+}
+.active .pricing-btn {
+    background-color: #f91942;
+    color: #fff;
+}
+.active .pricing-heading::after {
+    background-color: #fff;
+    color: #f91942;
+    content: "Featured";
+    font-size: 14px;
+    padding: 5px 50px;
+    position: absolute;
+    right: -35px;
+    top: 20px;
+    transform: rotate(45deg);
+}
