@@ -82,8 +82,10 @@ img {
 .service-box-bg {
 }
 .service-box-bg i:before {
-  font-size: 35px;
-  line-height: 69px;
+  align-items: center;
+  display: flex;
+  font-size: 38px;
+  justify-content: center;
   margin: 0;
 }
 .service-box-bg {
