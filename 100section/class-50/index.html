@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 50</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<section class="section-padding listing-carousel-wraper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="section-title">
+						<h2>Populer Categories</h2>
+						<p>Brows <span> the most desigrable</span> categorises</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="listing-carousel owl-carousel">
+						<div class="single-listing-box listing-bg-1">
+							<div class="listing-box-content">
+								<h3>Eat &amp; Drink</h3>
+								<p>130 listing</p>
+								<a href="" class="bordered-btn">Browse</a>
+							</div>
+						</div>
+						<div class="single-listing-box listing-bg-2">
+							<div class="listing-box-content">
+								<h3>Shops</h3>
+								<p>14 listing</p>
+								<a href="" class="bordered-btn">Browse</a>
+							</div>
+						</div>
+						<div class="single-listing-box listing-bg-3">
+							<div class="listing-box-content">
+								<h3>Event</h3>
+								<p>67 listing</p>
+								<a href="" class="bordered-btn">Browse</a>
+							</div>
+						</div>
+						<div class="single-listing-box listing-bg-4">
+							<div class="listing-box-content">
+								<h3>Fitness</h3>
+								<p>27 listing</p>
+								<a href="" class="bordered-btn">Browse</a>
+							</div>
+						</div>
+						<div class="single-listing-box listing-bg-5">
+							<div class="listing-box-content">
+								<h3>Eat &amp; Drink</h3>
+								<p>130 listing</p>
+								<a href="" class="bordered-btn">Browse</a>
+							</div>
+						</div>
+						<div class="single-listing-box listing-bg-5">
+							<div class="listing-box-content">
+								<h3>Eat &amp; Drink</h3>
+								<p>130 listing</p>
+								<a href="" class="bordered-btn">Browse</a>
+							</div>
+						</div>
+
+						<div class="single-listing-box listing-bg-5">
+							<div class="listing-box-content">
+								<h3>Eat &amp; Drink</h3>
+								<p>130 listing</p>
+								<a href="" class="bordered-btn">Browse</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+
+		// owl-carousel active
+		$(".listing-carousel").owlCarousel({
+			items: 3,
+			loop: true,
+			dots: true,
+			nav: false,
+			autoplay: true,
+			margin:30,
+			smartSpeed: 600
+		})
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>
