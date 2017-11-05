@@ -1,0 +1,187 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ==========================
+  mainmenu CSS 
+============================= */
+.header-area {background-color: #333;}
+.mainmenu {
+    margin-right: 15px;
+}
+.mainmenu ul {
+    text-align: right;
+}
+.mainmenu li {
+    display: inline-block;
+    position: relative;
+}
+.mainmenu li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 30px 0 30px 25px;
+}
+.mainmenu li.current > a,
+.mainmenu li > a:hover {
+    color: #f4bb4e;
+}
+.logo a {
+    display: block;
+    padding: 22px 0;
+    margin-left: 15px;
+}
+.logo img {
+    max-height: 50px;
+}
+
+/* dropdiwn css */
+.mainmenu ul li ul {
+  background-color: #ffffff;
+  position: absolute;
+  text-align: left;
+  width: 160px;
+  top: 120%;
+  left: 0;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  box-shadow: inset 0 0 0 1px #ddd;
+}
+.mainmenu ul li:hover ul {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+  z-index: 3;
+}
+.mainmenu ul li ul li {
+  display: block;
+}
+.mainmenu ul li ul li a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 18px;
+  text-transform: capitalize;
+}
+
+/* multi dropdown */
+.mainmenu ul li:hover ul ul {
+  visibility: hidden;
+  opacity: 0;
+}
+.mainmenu ul ul li ul {
+  left: 100%;
+  margin-top: 20px;
+}
+.mainmenu ul ul li:hover > ul {
+  margin-top: -30px;
+  visibility: visible;
+  opacity: 1;
+}
+.mainmenu li:last-child ul li ul {
+    left: -100%;
+}
+
+
+/* ==========================
+	Section CSS 
+============================= */
+.section-padding {padding: 80px 0;}
+.section-title{
+    margin-bottom: 60px;
+    color: #848484;
+    font-size: 18px
+}
+.section-title h2 {
+    color: #333;
+    text-transform: uppercase;
+}
+.section-title span {
+    color: #1cc9ce
+}
+.service-box-bg{background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-color: #ddd;
+    background-position: center;
+    height: 250px;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+}
+.service-box-bg-2{background-image: url(img/img2.jpg);}
+.service-box-bg-3{background-image: url(img/img3.jpg);}
+.single-service-box{
+    border: 1px solid #e5e5e5;
+    border-radius: 5px 5px 0px 0px;
+    display: block;
+}
+.single-service-box:hover .service-box-bg i{
+    background:#1cc9ce;
+    border-color: #26395a;
+}
+.single-service-box:hover h2{
+    background:#26395a;
+    color: #fff;
+}
+.service-box-bg i {
+  color: #fff;
+  background: #26395a;
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -40px;
+  text-align: center;
+  border: 5px solid;
+  transition: .3s;
+}
+.service-box-bg {
+}
+.service-box-bg i:before {
+  align-items: center;
+  display: flex;
+  font-size: 38px;
+  justify-content: center;
+  margin: 0;
+}
+.service-box-bg {
+}
+.single-service-box h2 {
+  color: #222;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  padding-top: 60px;
+  transition: .3s;
+}
