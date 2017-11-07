@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 60</title>
+<style type="text/css">
+#map {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+</style>
+</head>
+<body>
+
+	<div id="map"></div>
+	
+	<!--/#scripts--> 
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script>Winddow.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>');</script>
+	
+    <script src="js/gmap3.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnYtHgVnIbPz1gV1fgfTLw068mjgx8E0I"></script>
+<script>
+(function ($) {
+"use strict";
+$(document).ready(function() {   
+		
+/*======== Google Maps Active ========*/
+	var dhaka = {lat: 23.8124559, lng: 90.4087892};
+	$('#map').gmap3({
+		address: "Dhaka, Bangladesh",
+		center: dhaka,	 //  {lat: 23.759045, lng: 90.3831922}
+		mapTypeId : google.maps.MapTypeId.ROADMAP,
+		zoom: 8,
+		scrollwheel: false
+	})
+	
+	// Only For content info no-marker
+/*	.infowindow({
+		position: dhaka,
+		content: '<h5>Address</h5>'+
+				'<p class="pb20">470 Lucy Forks, Patriciafurt, YC7B 3UT</p>'+
+				'<h5>Phone Number</h5>'+
+				'<p>(0161) 347 8854 &nbsp; (0117) 900 9463</p>'
+	})
+	.then(function (infowindow) {
+		infowindow.open(this.get(0)); // this.get(0) return the map (see "get" feature)
+	});		*/
+	
+	// For marker & info
+	.marker({
+		position: dhaka,
+		icon: "http://maps.google.com/mapfiles/marker_green.png"
+	})
+	.infowindow({
+		content: "<h4>Hello from Dhaka, Bangladesh.</h4>"+
+				"<p>Lorem Ipsum is simply dummy text.</p>"
+	})
+	.then(function (infowindow) {
+		var map = this.get(0);
+		var marker = this.get(1);
+		marker.addListener('click', function() {
+		  infowindow.open(map, marker);
+		});
+	});
+	
+});
+}(jQuery));	
+</script>
+</body>
+</html>
