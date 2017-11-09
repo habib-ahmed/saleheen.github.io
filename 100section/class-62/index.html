@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 62</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="project-filter">
+						<ul>
+							<li class="active" data-filter="*">All</li>
+							<li data-filter=".web">Branding</li>
+							<li data-filter=".seo">Illustration</li>
+							<li data-filter=".marketing">photographt</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="project-list">
+					<div class="col-md-4 web seo">
+						<div class="single-project-item project-bg-1">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 web">
+						<div class="single-project-item project-bg-2">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 seo">
+						<div class="single-project-item project-bg-3">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 web marketing">
+						<div class="single-project-item project-bg-4">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 web seo marketing">
+						<div class="single-project-item project-bg-5">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-project-item project-bg-6">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 marketing ">
+						<div class="single-project-item project-bg-7">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 web marketing">
+						<div class="single-project-item project-bg-8">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 seo marketing">
+						<div class="single-project-item project-bg-9">
+							<div class="project-hover">
+								<h3>Creative way to make fitness way your life</h3>
+								<p>Branding</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/isotope-3.0.4.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {  
+		
+		$('.project-filter li').click(function() {
+			var selector = $(this).attr('data-filter');
+			$('.project-list').isotope({
+				filter: selector
+			});
+			
+			$('.project-filter li').removeClass('active');
+			$(this).addClass('active');
+		});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>
