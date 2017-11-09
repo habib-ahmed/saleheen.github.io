@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 61</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="section-padding map-bg">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="section-title">Location</h1>
+				</div>
+
+				<div class="col-md-6">
+					<p class="section-desc"><strong>Passeig De Colom, No 234 </strong> - In condimentum facilisis portadc, Sedjhc nec diam eu diam mattris viverra. Nulla fringilla, orciorci euismod semper.</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="location-direction">
+						<li>
+							<h3>2.4 <span>km</span></h3>
+							<p>From city center</p>
+						</li>
+						<li>
+							<h3>30.7 <span>km</span></h3>
+							<p>From nearest airport</p>
+						</li>
+						<li>
+							<h3>0.8 <span>km</span></h3>
+							<p>From nearest Attraction</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-9">
+					<div class="map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-justify">
+					<h3>Lorem ipsum dolor sit amet.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ab veniam dolore officiis ullam, sit asperiores facilis, facere atque unde quam optio doloremque ad. Ullam repudiandae accusamus recusandae magni dolores quidem vitae veritatis sequi cumque impedit, doloremque fugiat tenetur accusantium minima dignissimos voluptatem quo adipisci natus laudantium, aliquam expedita deserunt sapiente? Quas blanditiis dicta iste quam, omnis sit. Molestias commodi, dolorum saepe explicabo iste, perferendis asperiores in, voluptatibus dolor ullam maxime vel recusandae consectetur deserunt vitae. Facere nobis neque, odit expedita molestias repellat porro perferendis hic voluptatum cum blanditiis nesciunt culpa? Dolorum rem voluptates quaerat exercitationem distinctio ad. Aperiam, doloremque.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>	
+    <script src="js/gmap3.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnYtHgVnIbPz1gV1fgfTLw068mjgx8E0I"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+			
+	/*======== Google Maps Active ========*/
+		var dhaka = {lat: 23.8124559, lng: 90.4087892};
+		$('.map').gmap3({
+			address: "Dhaka, Bangladesh",
+			center: dhaka,	 //  {lat: 23.759045, lng: 90.3831922}
+			mapTypeId : google.maps.MapTypeId.ROADMAP,
+			zoom: 12,
+			scrollwheel: false
+		})
+
+		// For marker & info
+		.marker({
+			position: dhaka,
+			icon: "img/map_icon(36x48).png"
+		})
+		.infowindow({
+			content: "<h4>Hello from Dhaka, Bangladesh.</h4>"+
+					"<p>Lorem Ipsum is simply dummy text.</p>"
+		})
+		.then(function (infowindow) {
+			var map = this.get(0);
+			var marker = this.get(1);
+			marker.addListener('click', function() {
+			  infowindow.open(map, marker);
+			});
+		});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>
