@@ -1,0 +1,68 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+html, body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+p {margin: 0 0 15px;}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+    color: #333333;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.service-sections {
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}
+.service-sections .row {
+    margin: 0;
+}
+.service-sections .col-md-4 {
+    padding: 0;
+}
+.single-service-box {
+	border-right: 2px solid #ddd;
+	border-top: 2px solid #ddd;
+    font-size: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: .3s;
+}
+.single-service-box h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.service-icon i.fa {
+    color: #ddd;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.single-service-box:hover {
+    box-shadow: 0 20px 59px #666;
+}
+.single-service-box:hover .service-icon i.fa {
+    color: #de5347;
+}
