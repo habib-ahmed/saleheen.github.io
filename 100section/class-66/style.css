@@ -1,0 +1,75 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #979797;
+    font-size: 15px;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: #4c4b8a;
+}
+p {margin: 0 0 15px;}	
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* ==========================
+	Section CSS 
+============================= */
+.mainmenu-area {
+    background-color: #4c4b8a;
+    width: 100%;
+    z-index: 99;
+}
+.affix {
+    position: fixed;
+}
+.mainmenu-area li {
+    display: inline-block;
+    position: relative;
+}
+.mainmenu-area li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+}
+
+
+
+.features-area {
+    padding-top: 100px;
+}
+.features-wrap {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 130px;
+}
+.section-title {
+    margin-bottom: 130px;
+}
+.features-wrap h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+img.hand-absolute {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+}
+
+
+.section-padding {
+    padding: 100px 0;
+    background-color: #eee;
+}
