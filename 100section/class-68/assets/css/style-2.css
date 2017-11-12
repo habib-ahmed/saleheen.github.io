@@ -1,0 +1,180 @@
+.home-3 { 
+    line-height: 1.7; 
+}
+html,
+body,
+.homepage-hero-area-4, 
+.single-slider-item { 
+    height: 100%;
+}
+.home-2 h3 {
+    font-size: 22px;
+    transition: .3s;
+}
+.theme-2.hero-area {
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.8;
+    padding: 80px 0;
+    overflow-x: hidden;
+}
+
+.hero-area h1 {
+    color: #fff;
+    font-size: 42px;
+    margin-top: 90px;
+}
+
+.website-check-form {
+    margin-top: 15px;
+}
+
+.single-blog-box {
+    color: #999;
+    display: block;
+    font-weight: 300;
+	margin: 15px 0;
+}
+.single-blog-box h4 {
+    line-height: 1.6;
+}
+.blog-meta {
+    font-size: 14px;
+}
+.blog-thumb-wrapper {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    margin: 0 -30px 25px;
+}
+.single-blog-box:hover {
+    color: #999;
+    opacity: 0.9;
+}
+
+
+.single-case-study {
+    height: 260px;
+    margin: 15px 0;
+}
+.case-study-wrapper {
+    text-align: center;
+}
+.case-study-area .case-study-more {
+    background-color: transparent;
+    color: #fff;
+    font-size: 25px;
+    line-height: 0;
+    margin: 0;
+}
+
+.case-study-box-style2 {
+    margin: 25px 0;
+}
+
+.case-section-area h4 {
+    font-weight: 700;
+}
+.header-absolute .boxed-btn {
+    color: #ffffff !important;
+}
+.header-absolute .boxed-btn:hover {
+    color: #ffffff !important;
+}
+
+
+.home-4 h1,
+.home-4 h2,
+.home-4 h3,
+.home-4 h4,
+.home-4 h5,
+.home-4 h6 {
+    font-weight: 700;
+}
+.home-4 .single-slider-item {
+    display: table;
+    width: 100%;
+}
+.home-4 .slider-item-wrapper {
+    color: #fff;
+    display: table-cell;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.home-4 .slider-item-wrapper h1 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-4 .website-check-form {
+    margin-top: 20px
+}
+.home-4 .website-check-form input {
+    background-color: #073a4b;
+    border-color: #073a4b;
+	color: #ffffff;
+}
+.website-check-form input[type="submit"],
+.email-subscribe-form input[type="submit"] {
+	border: 0;
+}
+
+.home-4 .blog-readmore-button {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.seo-anlysis-area .hero-form {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"], 
+button[type="submit"],
+.boxed-btn {
+	border: 0 !important;
+}
+/* ==================
+	Color CSS 
+===================== */
+input[type="submit"], 
+button[type="submit"],
+.boxed-btn,
+.slicknav_btn,
+.slicknav_nav .slicknav_row:hover,
+.slicknav_nav a:hover,
+.main-menu li:hover li:hover > a,
+.case-study-wrapper,
+.hero-form-wrapper input[type="submit"],
+.website-check-form input[type="submit"],
+.case-studies-carousel2 .owl-dots .owl-dot.active span, 
+.testimonial-area .owl-dots .owl-dot.active span,
+.active .testimonial-text,
+.case-studies-carousel2 .case-study-wrapper,
+.theme-3.video-play-btn,
+.theme-4.video-btn {
+    background-color: #24d5a1;
+}
+.main-menu li:hover > a,
+.menu-cta h4 span,
+.single-service-box:hover .service-readmore-btn,
+.single-service-box:hover h3,
+.single-service-box:hover .single-service-icon,
+.case-study-more:hover,
+.blog-readmore-button,
+.pricing-heading .pricing-count,
+.features-icon {
+    color: #24d5a1;
+}
+.single-pricing-box:hover {
+    border: 1px solid #24d5a1;
+}
+.single-service-box:hover,
+.single-pricing-box:hover .pricing-heading {
+    border-color: #24d5a1;
+}
