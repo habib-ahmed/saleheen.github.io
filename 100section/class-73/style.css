@@ -1,0 +1,100 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p {margin: 0 0 10px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+input:focus,
+textarea:focus {
+	outline: 0;
+}
+input[type="submit"],
+button[type="submit"] {
+    border: 0 none;
+}
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.contact-wrapper {
+    position: relative;
+    padding: 80px;
+    color: #fff;
+}
+.contact-wrapper-bg {
+    background-image: url(img/form_bg.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 78%;
+    width: 100%;
+    content: "";
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    background-color: #ddd;
+}
+.contact-wrapper-bg:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #3d76cf;
+    opacity: .8;
+    z-index: -2;
+}
+.boxed-form {
+    color: #333;
+    background-color: #fff;
+    margin-left: 100px;
+    padding: 50px;
+    box-shadow: 0 0 4px #ccc;
+}
+.boxed-form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.boxed-form input, .boxed-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+.boxed-form textarea {
+    height: 100px;
+}
+.boxed-form input[type=submit] {
+    background-color: #009812;
+    color: #f1f1f1;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+}
