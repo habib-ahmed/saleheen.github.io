@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 71</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="left-side">
+		<div class="logo">
+			<h2>rusty</h2>
+		</div>
+		<ul class="main-menu">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">about me</a></li>
+			<li><a href="#">my works</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+		<div class="social-links">
+			<a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="" target="_blank"><i class="fa fa-youtube"></i></a>
+		</div>
+		<p class="copy-right-text">&copy; 2017 <span>freelancer 2</span>. All Rights Reserved.</p>
+	</div>
+
+	<div class="right-side">
+		<div class="right-side-wrap">
+			<h1>hello <span>everyone</span></h1>
+			<p>Create <a href="#" data-toggle="tooltip" data-placement="bottom" title="Know about our website">Website</a> easier then ever before.</p>
+			<a href="" data-target="#learn-more-modal" data-toggle="modal" class="boxed-btn">See Details</a>
+			<a data-toggle="popover" data-trigger="focus" data-placement="right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?" href="#" class="boxed-btn">popover here</a>
+		</div>
+	</div>
+
+	<div id="learn-more-modal" class="modal fade custom-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button> 
+					<h4 class="modal-title">Learn more about our company</h4>
+				</div>
+
+				<div class="modal-body">
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio necessitatibus porro alias corporis ex nam totam consectetur minima quae magni praesentium, ad, non suscipit, tenetur quidem esse, cum assumenda architecto! Doloribus, dolores! Assumenda dolores doloremque error labore blanditiis cum amet iure tenetur dolorum obcaecati, eligendi exercitationem a voluptates quasi! Possimus distinctio quia placeat in voluptatum ipsum ex eum nesciunt esse perferendis illo temporibus incidunt, rerum consequatur et animi aperiam molestiae quo harum, dolorem, accusamus quidem corporis, eveniet voluptas. Distinctio illo officiis totam officia autem rem obcaecati harum, natus earum itaque iusto dolor consectetur sed porro eos laudantium, deleniti, nostrum perferendis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam illum nemo officia amet voluptatibus. Tempore aperiam facere reiciendis, necessitatibus in veritatis praesentium ipsum accusamus vel repellat nisi dolorum, blanditiis?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+
+		$('[data-toggle="tooltip"]').tooltip();
+
+		$('[data-toggle="popover"]').popover();
+		 
+		$('.main-menu li').hover(function(){
+			$('.main-menu li').removeClass('active');
+			$(this).addClass('active');
+		});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>
