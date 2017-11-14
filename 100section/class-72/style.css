@@ -1,0 +1,32 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+p {margin: 0 0 10px;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.section-title {
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+.counter-up-section {
+    background-color: #eee;
+    padding: 100px 0;
+    margin: 100px 0;
+}
+.counter-number {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
