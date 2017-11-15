@@ -1,0 +1,106 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body, html {height: 100%;}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p {margin: 0 0 10px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+input:focus,
+textarea:focus {
+	outline: 0;
+}
+input[type="submit"],
+button[type="submit"] {
+    border: 0 none;
+}
+
+/* ==========================
+	Section CSS 
+============================= */
+.welcome-area {
+    background-image: url(img/bg.jpg);
+    background-color: #ddd;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.welcome-area-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.welcome-area-inner h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.welcome-area-inner h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+.email-subscribe-form {
+    width: 400px;
+    margin: 40px auto;
+}
+.email-subscribe-form input {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 40px;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+}
+.email-subscribe-form input[type=submit] {
+    background-color: #ffcd47;
+    color: #fff;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.countdown-timer-wrap {
+    padding-top: 20px;
+}
+
+.single-countdown {
+    font-size: 80px;
+    line-height: 40px;
+    display: inline-block;
+    text-align:center;
+    padding:20px;
+}
+
+.single-countdown span {
+    font-size: 18px;
+    line-height: 20px;
+    text-transform:uppercase;
+    font-weight:700
+}

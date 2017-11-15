@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 74</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="welcome-area">
+		<div class="welcome-area-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Jeveline <b>landing page</b> event</h1>
+						<h3>Send us your e-mail and we will save you a seat!</h3>
+
+						<div class="email-subscribe-form">
+							<form action='index' method='post'><input type='hidden' name='form-name' value='form 1' />
+								<input type="email" placeholder="Enter your e-mail here">
+								<input type="submit" value="subscribe now">
+							</form>
+						</div>
+
+						<div class="row">
+							<div class="col-md-1 col-md-offset-5">
+								<div class="clock"></div>
+							</div>
+						</div>
+
+						<div class="countdown-timer-wrap">
+							<div id="clock"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+		 
+		$('#clock').countdown('2019/09/30', function(event) {
+			$(this).html(event.strftime('<span class="countdown-wrap"><span class="single-countdown">%w <br /><span>Weeks</span></span> <span class="single-countdown">%d <br /><span>Days</span></span> <span class="single-countdown">%H <br /><span>Hours</span></span> <span class="single-countdown">%M <br /><span>Munites</span></span> <span class="single-countdown">%S <br /><span>Second</span></span></span>'));
+
+
+		//	$(this).html(event.strftime('%w weeks %D days %H %M:%S'));
+		});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>
