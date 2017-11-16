@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 75</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="section-padding colored-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/1.jpg" alt="Background image">
+				</div>
+				<div class="col-md-6">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nostrum temporibus nihil quasi illum, perferendis omnis inventore repudiandae voluptas suscipit veritatis asperiores vel, nemo dolor eius ut cupiditate, cumque magni ipsa. Asperiores tenetur recusandae quam aut dolorem sed quaerat voluptate, dolor facere error assumenda numquam.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nostrum temporibus nihil quasi illum, perferendis omnis inventore repudiandae voluptas suscipit veritatis asperiores vel, nemo dolor eius ut cupiditate, cumque magni ipsa.
+					</p>
+
+					<div class="single-bar-item">
+						<h2>Business plan development</h2>
+						<div id="bar1" class="barfiller">
+							<span class="tip"></span>
+							<span class="fill" data-percentage="50"></span>
+						</div>
+					</div>
+					<div class="single-bar-item">
+						<h2>Strategy development</h2>
+						<div id="bar2" class="barfiller">
+							<span class="tip"></span>
+							<span class="fill" data-percentage="90"></span>
+						</div>
+					</div>
+					<div class="single-bar-item">
+						<h2>Financial Analysis</h2>
+						<div id="bar3" class="barfiller">
+							<span class="tip"></span>
+							<span class="fill" data-percentage="80"></span>
+						</div>
+					</div>
+					<div class="single-bar-item">
+						<h2>General Coaching &amp; Advisory service</h2>
+						<div id="bar4" class="barfiller">
+							<span class="tip"></span>
+							<span class="fill" data-percentage="20"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+		 
+		$('#bar1').barfiller({'barColor': '#fff'});
+		$('#bar2').barfiller({'barColor': '#fff'});
+		$('#bar3').barfiller({'barColor': '#fff'});
+		$('#bar4').barfiller({'barColor': '#fff'});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>

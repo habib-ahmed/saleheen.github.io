@@ -1,0 +1,66 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p {margin: 0 0 10px;}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+.section-padding {padding: 30px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-padding.colored-bg {
+    background-color: #69d3f0;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: justify;
+}
+.section-padding.colored-bg img {
+    margin-top: 80px;
+}
+.single-bar-item h2 {
+    font-size: 25px;
+}
+.barfiller {
+    width: 100%;
+    height: 15px;
+    background: #323848;
+    position: relative;
+    margin-bottom: 20px;
+}
+.barfiller .tip {
+    margin-top: -50px;
+    font-size: 25px;
+    background: 0 0;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    left: auto!important;
+    right: 0;
+}
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+}
