@@ -1,0 +1,110 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+p {margin: 0 0 10px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+.section-padding {padding: 30px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.round-bg:after {
+    background-image: url(img/girl-mood-bg.jpg);
+}
+.round-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.round-bg::after {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    content: "";
+    height: 450px;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -225px;
+    position: absolute;
+    top: 50%;
+    width: 450px;
+    z-index: -1;
+}
+.single-feature-item {
+    font-size: 14px;
+    margin: 20px 40px;
+    padding: 30px 170px 30px 0;
+    position: relative;
+    text-align: right;
+    z-index: 1;
+}
+.feature-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 50px;
+    height: 150px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 150px;
+}
+.feature-icon i {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    line-height: 120px;
+    width: 100%;
+}
+.single-feature-item h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.left-icon .feature-icon {
+    left: 0;
+    right: auto;
+}
+.single-feature-item.left-icon {
+    margin-left: 0;
+    margin-right: 90px;
+    padding-left: 170px;
+    padding-right: 0;
+    text-align: left;
+}
+.single-feature-item.feature-padding-left {
+    margin-left: 0;
+    margin-right: 98px;
+}
+.single-feature-item.feature-padding-right.left-icon {
+    margin-left: 98px;
+    margin-right: 0;
+}
+.single-feature-item:hover .feature-icon {
+    box-shadow: 0 0 10px #333;
+}
