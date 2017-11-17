@@ -1,0 +1,91 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script|Roboto:300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+p {margin: 0 0 10px;}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+
+.section-padding {padding: 80px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.food-box-bg-1 {background-image: url(img/1.jpg);}
+.food-box-bg-2 {background-image: url(img/2.jpg);}
+.food-box-bg-3 {background-image: url(img/3.jpg);}
+
+.food-box-bg {
+    background-color: #ddd;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.food-info {
+    background-color: #f3f4f4;
+    padding: 30px;
+    border-top: 4px solid #d0963f;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: .3s;
+}
+.food-info h3 {
+    font-family: 'Aguafina Script', cursive;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+.food-info h2 {
+    color: #d0963f;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: .3s;
+    font-size: 25px;
+}
+.food-price span {
+    font-weight: 700;
+    font-size: 200%;
+}
+.bordered-btn {
+    border: 1px solid #d0963f;
+    color: #d0963f;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: .3s;
+}
+.single-food-box:hover .food-info {
+    background-color: #d0963f;
+    color: #fff;
+}
+.single-food-box:hover .food-info h3 {
+    color: #f4e60a;
+}
+.single-food-box:hover .food-info h2 {
+    color: #fff;
+}
+.single-food-box:hover .bordered-btn {
+    background-color: #d0963f;
+    border-color: #fff;
+    color: #fff;
+}
