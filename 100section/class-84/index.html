@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 83</title>
+    <title>Class 84</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" />
@@ -12,85 +12,119 @@
 <body>
 
 	<div class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="section-titile">
-						<h2>Our skills</h2>
-						<p>The Rangers needed a jolt for their home game of their second series against the Ottawa Senators Turning</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="single-progressbar">
-						<div id="web-progress-bar">
-							<span class="progress-bar-percentage"></span>
-						</div>
-						<h3>Web Design</h3>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="single-progressbar">
-						<div id="graphic-progress-bar">
-							<span class="progress-bar-percentage"></span>
-						</div>
-						<h3>Graphic Design</h3>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="single-progressbar">
-						<div id="digital-progress-bar">
-							<span class="progress-bar-percentage"></span>
-						</div>
-						<h3>Digital Marketing</h3>
-					</div>
-				</div>
-			</div>
-		</div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-4">
+	                <div class="single-fliper">
+	                    <div class="fliper">
+	                        <div class="front">
+	                            <div class="front-inner">
+	                                <i class="fa fa-eye"></i>
+	                                <h3>Innovative &amp; Elegent</h3>
+	                            </div>
+	                        </div>
+	                        <div class="back">
+	                            <div class="front-inner">
+	                                <i class="fa fa-eye"></i>
+	                                <h3>Innovative &amp; Elegent</h3>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="single-fliper">
+	                    <div class="fliper">
+	                        <div class="front">
+	                            <div class="front-inner">
+	                                <i class="fa fa-comments-o"></i>
+	                                <h3>Award Wining</h3>
+	                            </div>
+	                        </div>
+	                        <div class="back">
+	                            <div class="front-inner">
+	                                <i class="fa fa-comments-o"></i>
+	                                <h3>Award Wining</h3>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="single-fliper">
+	                    <div class="fliper">
+	                        <div class="front">
+	                            <div class="front-inner">
+	                                <i class="fa fa-users"></i>
+	                                <h3>Genius Team</h3>
+	                            </div>
+	                        </div>
+	                        <div class="back">
+	                            <div class="front-inner">
+	                                <i class="fa fa-users"></i>
+	                                <h3>Genius Team</h3>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="single-fliper">
+	                    <div class="fliper">
+	                        <div class="front">
+	                            <div class="front-inner">
+	                                <i class="fa fa-eye"></i>
+	                                <h3>Innovative &amp; Elegent</h3>
+	                            </div>
+	                        </div>
+	                        <div class="back">
+	                            <div class="front-inner">
+	                                <i class="fa fa-eye"></i>
+	                                <h3>Innovative &amp; Elegent</h3>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="single-fliper">
+	                    <div class="fliper">
+	                        <div class="front">
+	                            <div class="front-inner">
+	                                <i class="fa fa-comments-o"></i>
+	                                <h3>Award Wining</h3>
+	                            </div>
+	                        </div>
+	                        <div class="back">
+	                            <div class="front-inner">
+	                                <i class="fa fa-comments-o"></i>
+	                                <h3>Award Wining</h3>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="single-fliper">
+	                    <div class="fliper">
+	                        <div class="front">
+	                            <div class="front-inner">
+	                                <i class="fa fa-users"></i>
+	                                <h3>Genius Team</h3>
+	                            </div>
+	                        </div>
+	                        <div class="back">
+	                            <div class="front-inner">
+	                                <i class="fa fa-users"></i>
+	                                <h3>Genius Team</h3>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	</div>
 	
-	
-	<!--/#scripts--> 
-	<script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/circle-progress.min.js"></script>
-	<script>
-	(function ($) {
-		"use strict";
-		$(document).ready(function() {   
-			 
-			$("#web-progress-bar").circleProgress({
-				value: .9,
-				size: 220, 
-				thickness: 3, 
-				emptyFill: "#ffffff",
-				fill: "#22bbc0" 
-			}).on("circle-animation-progress", function(event, progress) {
-				$(this).find(".progress-bar-percentage").html(Math.round(90 * progress) + "<i>%</i>")
-			});
-
-			$("#graphic-progress-bar").circleProgress({
-				value: .95,
-				size: 220, 
-				thickness: 3, 
-				emptyFill: "#ffffff",
-				fill: "#22bbc0" 
-			}).on("circle-animation-progress", function(event, progress) {
-				$(this).find(".progress-bar-percentage").html(Math.round(95 * progress) + "<i>%</i>")
-			});
-
-			$("#digital-progress-bar").circleProgress({
-				value: .84,
-				size: 220, 
-				thickness: 3, 
-				emptyFill: "#ffffff",
-				fill: "#22bbc0" 
-			}).on("circle-animation-progress", function(event, progress) {
-				$(this).find(".progress-bar-percentage").html(Math.round(84 * progress) + "<i>%</i>")
-			});
-			
-		});
-	}(jQuery));	
-	</script>
 </body>
 </html>
