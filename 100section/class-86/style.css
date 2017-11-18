@@ -1,0 +1,150 @@
+/* Base CSS */
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+.special-area {
+    position: relative;
+    margin: 100px 0;
+}
+
+.absulute-bg {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    height: 100%;
+    width: 47%;
+    padding-right: 15px;
+    z-index: 1;
+}
+
+.absulute-bg-inner {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+.right-side .absulute-bg {
+    left: auto;
+    right: 3%;
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.absulute-bg::after {
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    width: 1000%;
+    height: 100%;
+    content: "";
+    background: #F3F3F3;
+    z-index: -1;
+}
+
+.right-side .absulute-bg::after {
+    right: auto;
+    left: 55px;
+}
+
+.section-text {
+    padding: 80px 0;
+}
+
+body {
+    color: #6D6D6D;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+h2 {
+    color: #373737;
+}
+
+.section-text h2 {
+    background: #fff;
+    font-size: 65px;
+    margin-bottom: 0;
+    margin-left: -232px;
+    position: relative;
+    z-index: 33;
+    padding: 40px 50px;
+    padding-right: 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.absulute-bg::before {
+    content: "";
+    width: 2px;
+    height: 120px;
+    background: #C79E5E;
+    position: absolute;
+    bottom: -80px;
+    right: 30%;
+}
+
+.right-side .absulute-bg::before {
+    right: auto;
+    left: 30%;
+}
+
+a.inline-btn {
+    display: inline-block;
+    color: #373737;
+    font-weight: 700;
+    padding: 3px 0;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    border-bottom: 2px solid #C79E5E;
+}
+
+a.inline-btn:hover {
+    color: #C79E5E;
+}
+
+a.inline-btn::after {
+    background: #c79e5e;
+    /* content: ""; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 545555;
+}
+
+a.inline-btn::before {
+    width: 100%;
+    height: 2px;
+}
+
+a.inline-btn:hover::before {
+    height: 100%;
+}
+
+.right-side .section-text h2 {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: -232px;
+    padding-right: 50px;
+}

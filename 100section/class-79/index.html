@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 79</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<!--  Normal Mailchimp use -->
+	<div class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-head-title text-center">
+						<h2>Use of mailchimp</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="mailchimp-signup-form">
+						<form action="https://rrfonline.us17.list-manage.com/subscribe/post?u=c0b18dbf1092f2f7b27c26ea9&amp;id=84dc6f1c37" method="post" class='form-horizontal'>
+							<div class="form-group">
+								<label class="col-md-2" for="mce-EMAIL">EMAIL</label>
+								<div class="col-md-8">
+									<input class="form-control" type="email" name="EMAIL" id="mce-EMAIL" placeholder="Type your E-mail address" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="submit" class="col-md-2">Submit Here</label>
+								<div class="col-md-8">
+									<input class="form-control btn btn-success" id="submit" type="submit" value="SUBMIT">
+								</div>
+							</div> 
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ajax Mailchimp use -->    
+	<div class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-head-title text-center">
+						<h2>Use of AJAX mailchimp</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="mailchimp-signup-form">
+						<form id='mailchimp-form' class='form-horizontal' method='post'><input type='hidden' name='form-name' value='mailchimp-form' />
+							<div class="form-group">
+								<label class="col-md-5" for="email">EMAIL</label>
+								<div class="col-md-7">
+									<input id="email" class="form-control" type="email" name="email" placeholder="Type your E-mail address" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="submit" class="col-md-5">Submit Here</label>
+								<div class="col-md-7">
+									<input class="form-control btn btn-success" id="submit" type="submit" value="SUBMIT">
+								</div>
+							</div> 
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+
+	<!--
+	    <form id="mailchimp-form">
+	        <input id="mc-email" type="email" name="subscribe" placeholder="Type your E-mail address">
+	        <input type="submit" value="Submit">
+	          
+	        <p><label for="mc-email"></label></p>
+	    </form>
+	-->
+
+
+
+		</div>
+	</div>
+
+	
+	
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+<script>
+(function ($) {
+	"use strict";
+	$(document).ready(function() {   
+		 
+		$('#mailchimp-form').ajaxChimp({
+		    url: 'https://rrfonline.us17.list-manage.com/subscribe/post?u=c0b18dbf1092f2f7b27c26ea9&amp;id=84dc6f1c37'
+		});
+		
+	});
+}(jQuery));	
+</script>
+</body>
+</html>

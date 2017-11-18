@@ -1,0 +1,149 @@
+/* ==========================
+	default CSS 
+============================= */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+p {margin: 0 0 10px;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0 none;
+}
+a {
+    display: inline-block;
+	transition: all linear .3s;
+}
+.section-padding {padding: 100px 0;}
+
+/* ==========================
+	Section CSS 
+============================= */
+.portfolio-bg-1 {background-image: url(img/1.jpg);}
+.portfolio-bg-2 {background-image: url(img/2.jpg);}
+.portfolio-bg-3 {background-image: url(img/3.jpg);}
+.portfolio-bg-4 {background-image: url(img/4.jpg);}
+
+.header-area.header-area-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px 0;
+}
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.logo a {
+    color: #fff;
+}
+.logo img {
+    height: 48px;
+}
+.mainmenu {
+    text-align: right;
+}
+.mainmenu li {
+    display: inline-block;
+}
+.mainmenu li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 50px;
+    text-transform: capitalize;
+    display: block;
+}
+
+
+.hero-area {
+    padding-top: 220px;
+    padding-bottom: 100px;
+    background-color: #1d1e20;
+}
+.hero-area, .hero-area a, .section-padding.dark-bg {
+    color: #777;
+}
+.hero-area h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.hero-area h2 span {
+    color: #e3bb1e;
+}
+
+
+.section-padding.yellow-bg {
+    background-color: #e3bb1e;
+    color: #fff;
+}
+.section-padding.yellow-bg h2 {
+    margin-bottom: 30px;
+}
+.portfolio-list {
+    margin-left: -2%;
+}
+.single-portfolio-list {
+    background-position: center;
+    background-size: cover;
+    background-color: #ddd;
+    height: 400px;
+    width: 60%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    float: left;
+}
+.single-portfolio-list.small-list {
+    width: 36%;
+}
+
+
+.section-padding.dark-bg {
+    background-color: #1d1e20;
+}
+.cta-text h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.boxed-btn {
+    display: inline-block;
+    border: 1px solid #e3bb1e;
+    color: #e3bb1e;
+    text-transform: uppercase;
+    padding: 2px 40px;
+    margin-top: 40px;
+}
+
+
+.footer-area {
+    background-color: #1d1e20;
+    border-top: 1px solid #333;
+    color: #777;
+    padding: 20px 0 15px;
+}
+.social-icon {
+    font-size: 20px;
+}
+.social-icon a {
+    color: #777;
+    padding-left: 15px;
+    display: inline-block;
+}

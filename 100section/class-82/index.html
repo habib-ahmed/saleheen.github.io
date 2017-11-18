@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 82</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="featured-project-wrap">
+						<h2>Featured <span>Projects</span></h2>
+						<div class="feature-projects owl-carousel">
+							<div class="single-featured-projects">
+								<div class="featured-bg" style="background-image: url(img/slide1.jpg);"></div>
+								<div class="featured-content">
+									<h3>Donec Venenatis semper.</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates repellat debitis perferendis, libero explicabo autem, architecto et ex! Harum.</p>
+									<a href="">View More</a>
+								</div>
+							</div>
+							<div class="single-featured-projects">
+								<div class="featured-bg" style="background-image: url(img/slide2.jpg);"></div>
+								<div class="featured-content">
+									<h3>Our best project for healthy life.</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates repellat debitis perferendis, libero explicabo autem, architecto et ex! Harum.</p>
+									<a href="">View More</a>
+								</div>
+							</div>
+							<div class="single-featured-projects">
+								<div class="featured-bg" style="background-image: url(img/slide3.jpg);"></div>
+								<div class="featured-content">
+									<h3>Etiam ultricies nisi vel augue.</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates repellat debitis perferendis, libero explicabo autem, architecto et ex! Harum.</p>
+									<a href="">View More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--/#scripts--> 
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script>
+	(function ($) {
+		"use strict";
+		$(document).ready(function() {   
+
+			// owl-carousel active
+			$('.feature-projects').owlCarousel({
+				items: 1,
+				loop: true,
+				dots: true,
+				nav: false,
+				animateOut:"fadeOut"
+			});
+
+			
+		});
+	}(jQuery));	
+	</script>
+</body>
+</html>
